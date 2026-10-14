@@ -29,6 +29,6 @@ const projects = [
       "The site you're looking at. A fun website about me, and what I love doing. First of many versions (attempting to build in React next!)",
     status: "live",
     tech: ["HTML", "CSS", "JavaScript"],
-    repo: "",
+    repo: "https://github.com/NamrathaMa/namrathama.github.io",
   },
 ];
