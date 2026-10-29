@@ -1,110 +1,32 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Full-stack engineer in Bangalore. Projects, experience and contact.">
-        <meta property="og:title" content="Namratha Manikonda · Full-stack engineer">
-        <meta property="og:description" content="Full-stack engineer by day, yogi by evening, occasional potter.">
-        <meta property="og:image" content="https://namrathama.github.io/images/Preview_Photo.png">
-        <meta property="og:url" content="https://namrathama.github.io/">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-        <script>
-            {
-                const savedTheme = localStorage.getItem("theme");
-                const preferDarkTheme = window.matchMedia(
-                    "(prefers-color-scheme:dark)",
-                ).matches;
-                document.documentElement.dataset.theme =
-                    savedTheme || (preferDarkTheme ? "dark" : "light");
-            }
-        </script>
-        <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-        <link rel="stylesheet" href="styles.css">
-        <title>Namratha</title>
-    </head>
-    <body>
-        <header class="header">
-            <div class="container header-inner">
-                <a href="#" class="logo">namratha<span>.</span></a>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                    </ul>
-                </nav>
-                <div class="links"></div>
-            </div>
-        </header>
-        <main class="container">
-            <section id="intro" class="intro">
-                <div>                
-                    <h1>hi, i'm <span class="nowrap"><span class="name">namratha</span>.<span class="cursor"></span></span></h1>
-                    <p class="lede">Full-stack engineer by day, yoga-practitioner by evening, and occasional potter. I like turning business requirements into software that’s dependable and fun to use. Welcome to my corner of the internet!</p>
-                    <div class="cta">
-                        <a class="btn" href="#contact">Say hi</a>
-                        <a class="btn btn-solid" href="#projects">See My Projects</a>
-                    </div>
-                </div>
-                <pre class="code"><span class="keyword">const</span> namratha = {
-  role:     <span class="string">'Full-stack engineer'</span>,
-  based:    <span class="string">'Bangalore, India'</span>,
-  stack:    <span class="string">['Angular', 'React', 'Node', 'SQL']</span>,
-  learning: <span class="string">'React, one project at a time'</span>,
-  status:   <span class="string">'open to work'</span>,
-};
-<span class="comment">// export default namratha;</span></pre>
-            </section>
-            <section id="about">
-                <p class="section-tag">&lt;About /&gt;</p>
-                <h2>A bit about me</h2>
-                <div class="about-grid"></div>
-            </section>
-            <section id="experience">
-                <p class="section-tag">&lt;Experience /&gt;</p>
-                <h2>Where I've worked</h2>
-                <div class="experience-grid"></div>
-            </section>
-            <section id="education">
-                <p class="section-tag">&lt;Education /&gt;</p>
-                <h2>Where I studied</h2>
-                <div class="education-grid"></div>
-            </section>
-            <section id="projects">
-                <p class="section-tag">&lt;Projects /&gt;</p>
-                <h2>Things I've built</h2>
-                <div class="projects-grid" id="projects-grid"></div>
-            </section>
-            <section id="contact">
-                <p class="section-tag">&lt;Contact me /&gt;</p>
-                <h2>Let's talk</h2>
-                <p class="contact-text">
-                    I'm looking for full-stack engineering roles in Bangalore. If you're hiring, or just want to talk shop, my inbox is open.
-                </p>
-                <div class="email-row">
-                    <span class="email" id="email">nammy.manikonda@gmail.com</span>
-                    <button class="copy-btn" id="copy-btn" aria-label="copy email">
-                        <svg class="icon-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
-                        <svg class="icon-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m16 9-5.5 5.5L8 12"/></svg>
-                        <span class="copy-label" id="copy-label">Copy Email</span>
-                    </button>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div class="container">
-                <p>
-                    Designed and built by Namratha Manikonda · 2026
-                </p>
-            </div>
-
-        </footer>
-        <script src="data.js"></script>
-        <script src="script.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Full-stack engineer in Bangalore. Projects, experience and contact.">
+    <meta property="og:title" content="Namratha Manikonda · Full-stack engineer">
+    <meta property="og:description" content="Full-stack engineer by day, yogi by evening, occasional potter.">
+    <meta property="og:image" content="https://namrathama.github.io/images/Preview_Photo.png">
+    <meta property="og:url" content="https://namrathama.github.io/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <script>
+      {
+        const savedTheme = localStorage.getItem("theme");
+        const preferDarkTheme = window.matchMedia(
+          "(prefers-color-scheme:dark)",
+        ).matches;
+        document.documentElement.dataset.theme =
+          savedTheme || (preferDarkTheme ? "dark" : "light");
+      }
+    </script>
+    <title>Namratha</title>
+    <script type="module" crossorigin src="/assets/index-CXAcH9QD.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CGFP7-95.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
